@@ -14,12 +14,16 @@ const multiply = function(array) {
   return array.reduce((total, num) => total * num, 1);
 };
 
-const power = function() {
-	
+const power = function(numOne, numTwo) {
+  return numOne ** numTwo;
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+  let currentNum = 1;
+  for (let i = num; i > 0; i--) {
+      currentNum *= i;
+  }
+	return currentNum;
 };
 
 // Do not edit below this line
